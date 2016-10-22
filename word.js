@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 //Check the letters guessed versus the random word selected
 var letterConstructor = require("./letter.js");
 
@@ -11,6 +11,7 @@ function word(value){
 	}
 };
 
+//check if word is guessed
 word.prototype.isComplete = function(){
 	for(var i = 0; i < this.letters.length; i++){
 		if(!this.letters[i].show) return false;
@@ -41,5 +42,3 @@ word.prototype.toString = function(){
 }
 
 exports.wordConstructor = word;
-=======
->>>>>>> parent of 186ac7e... letter constructor and word check for completion
