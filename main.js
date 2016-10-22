@@ -6,7 +6,7 @@ var randomWord = game.randomWord;
 var letterGuessed;
 exports.letter;
 
-var myWord = new wordConstructor.wordConstructor(game.randomWord);
+var myWord = new wordConstructor.wordConstructor(randomWord);
 var maxGuesses = 15;
 
 //have user guess a letter

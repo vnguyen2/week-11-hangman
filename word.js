@@ -23,7 +23,7 @@ word.prototype.isComplete = function(){
 word.prototype.findLetter = function(letter){
 	var lowerLetter = letter.toLowerCase();
 	if (this.guessesMade.indexOf(lowerLetter) != -1) {
-		return "Letter Guessed Already!";
+		console.log("Letter Guessed Already!");
 	} 
 	this.guessesMade += lowerLetter; //Record the guess
 	for(var i=0; i<this.letters.length;i++){
