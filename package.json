@@ -1,0 +1,23 @@
+{
+  "name": "week-11-hangman",
+  "version": "1.0.0",
+  "description": "node hangman",
+  "main": "main.js",
+  "dependencies": {
+    "inquirer": "^1.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vnguyen2/week-11-hangman.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vnguyen2/week-11-hangman/issues"
+  },
+  "homepage": "https://github.com/vnguyen2/week-11-hangman#readme"
+}

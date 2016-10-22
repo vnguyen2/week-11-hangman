@@ -17,3 +17,26 @@ word.prototype.isComplete = function(){
 	return true;
 }
 
+//check if letter has been guessed. check letters array to the guess
+word.prototype.findLetter = function(letter){
+	var lowerLetter = letter.toLowerCase();
+	if (this.guessesMade.indexOf(lowerLetter) != -1) {
+		return "Letter Guessed Already!";
+	} 
+	this.guessesMade += lowerLetter; //Record the guess
+	for(var i=0; i<this.letters.length;i++){
+		if(this.letters[i].value.toLowerCase() == lowerLetter){
+		this.letters[i].show = true;
+		}
+	}
+};
+
+word.prototype.toString = function(){
+  var output = "";
+  for(var i=0; i<this.letters.length; i++){
+    output += this.letters[i].printInfo();
+  }
+  return output;
+}
+
+exports.wordConstructor = word;
